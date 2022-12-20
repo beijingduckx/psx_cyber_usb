@@ -224,7 +224,7 @@ static void make_button_report_analog(uint8_t *button1, uint8_t *button2)
 void hid_task(void)
 {
   // Poll every 1ms
-  const uint32_t interval_ms = 1;
+  const uint32_t interval_ms = 8;
   static uint32_t start_ms = 0;
   static uint8_t second_report = 0;
   static uint8_t report_len = 0;
