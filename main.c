@@ -195,9 +195,11 @@ static void make_button_report_digital(uint8_t *button1, uint8_t *button2)
     *button1 = (IS_BUTTON(*button2, PSX_BUTTON2_CROSS)   << 0)
             | (IS_BUTTON(*button2, PSX_BUTTON2_CIRCLE)   << 1)
             | (IS_BUTTON(*button2, PSX_BUTTON2_R1)       << 2)
+            | (IS_BUTTON(*button2, PSX_BUTTON2_L2)       << 2)
             | (IS_BUTTON(*button2, PSX_BUTTON2_RECT)     << 3)
             | (IS_BUTTON(*button2, PSX_BUTTON2_TRIANGLE) << 4)
             | (IS_BUTTON(*button2, PSX_BUTTON2_L1)       << 5)
+            | (IS_BUTTON(*button2, PSX_BUTTON2_R2)       << 5)
             | (IS_BUTTON(*button1, PSX_BUTTON1_SELECT)   << 6)
             | (IS_BUTTON(*button1, PSX_BUTTON1_START)    << 7);
   }
